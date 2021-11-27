@@ -1,0 +1,1 @@
+This is an Object Recognition Robot built using Webots, and programmed in C++. The robot can recognise infinite number of objects in its camera's path that is at a maximum of 100 units distance from the camera module's x-origin. The detected objects are enclosed in a red frame within the camera's window. 
