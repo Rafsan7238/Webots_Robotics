@@ -93,11 +93,11 @@ while robot.step(time_step) != -1:
         print("Left -> Left {0}, Middle {1}, right {2}".format(left_ir_value,mid_ir_value,right_ir_val))
 
     elif left_ir_value >= 500 and right_ir_val < 500 and mid_ir_value < 500:
-        error = 2
+        error = 1
         print("Left -> Left {0}, Middle {1}, right {2}".format(left_ir_value,mid_ir_value,right_ir_val))
 
     elif left_ir_value < 500 and right_ir_val >= 500 and mid_ir_value < 500:
-        error = -2
+        error = -1
         print("Right -> Left {0}, Middle {1}, right {2}".format(left_ir_value,mid_ir_value,right_ir_val))
 
     setSpeed(base_speed, pathCorrection(error))
